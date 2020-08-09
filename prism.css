@@ -206,3 +206,75 @@ div.code-toolbar > .toolbar span:focus {
 	text-decoration: none;
 }
 
+
+
+.code-toolbar {
+  position: relative
+}
+code {
+  font-size: 100%;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  padding: 1.5rem;
+  background: #142140;
+  margin-bottom: 1rem;
+}
+.tab-content :not(pre) > code[class*="language-"],
+.tab-content pre[class*="language-"] {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-right-radius: .3125rem;
+  border-bottom-left-radius: .3125rem;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ffffff;
+  text-shadow: none;
+  white-space: pre-wrap;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d09a5c;
+  background: transparent;
+}
+.token.punctuation,
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #2f6f9f;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #26a5b5;
+}
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #d44950;
+}
+
+div.code-toolbar > .toolbar {
+  top: 10px;
+  right: 10px;
+  opacity: 1;
+}
+div.code-toolbar > .toolbar a {
+  padding: .3rem .7rem !important;
+  background-color: rgba(255, 255, 255, .3);
+  box-shadow: none;
+  transition: all .2s ease-in-out;
+}
+div.code-toolbar > .toolbar a:hover {
+  background-color: #377dff;
+  color: #fff !important;
+}
